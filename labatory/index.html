@@ -4,56 +4,107 @@
   <meta charset="UTF-8">
   <title>Tunar Məmmədli - CV</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .editable:hover {
+      background-color: #eef;
+      cursor: pointer;
+    }
+    .tag {
+      background-color: #ddd;
+      padding: 3px 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .edit-btn {
+      margin-top: 10px;
+      background-color: #0b5ed7;
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .edit-btn:hover {
+      background-color: #0a53be;
+    }
+  </style>
+  <script>
+    function toggleEdit() {
+      const elements = document.querySelectorAll('.editable');
+      elements.forEach(el => {
+        if (el.isContentEditable) {
+          el.contentEditable = "false";
+        } else {
+          el.contentEditable = "true";
+        }
+      });
+    }
+  </script>
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
-
 
 <div class="cv-container">
   <!-- Sol tərəf -->
   <div class="left">
     <img class="profile-pic" src="https://www.w3schools.com/howto/img_avatar.png" alt="Profil şəkli">
-    <h1>Tunar Məmmədli</h1>
-    <h2>Kiber Təhlükəsizlik Tələbəsi</h2>
+    <h1 class="editable">Tunar Məmmədli</h1>
+    <h2 class="editable">Kiber Təhlükəsizlik Tələbəsi</h2>
 
     <div class="section-title">Əlaqə</div>
     <div class="info">
-      <p> Bakı şəhəri, Kürdəxanı qəsəbəsi</p>
-      <p> 055-123-45-67</p>
-      <p> memmedlit1234@gmail.com</p>
+      <p class="editable">Bakı şəhəri, Kürdəxanı qəsəbəsi</p>
+      <p class="editable">055-123-45-67</p>
+      <p class="editable">memmedlit1234@gmail.com</p>
     </div>
 
     <div class="section-title">Şəxsi Məlumat</div>
     <div class="info">
-      <p> Ad Soyad: Tunar Məmmədli</p>
-      <p> Doğum tarixi: 02.01.2008</p>
-      <p>💍 Ailə vəziyyəti: Subay</p>
+      <p class="editable">Ad Soyad: Tunar Məmmədli</p>
+      <p class="editable">Doğum tarixi: 02.01.2008</p>
+      <p class="editable">💍 Ailə vəziyyəti: Subay</p>
     </div>
 
     <div class="section-title">Dil Bilikləri</div>
     <div class="info">
-      <p>Rus dili – Orta</p>
-      <p>İngilis dili – Yaxşı</p>
+      <p class="editable">Rus dili – Orta</p>
+      <p class="editable">İngilis dili – Yaxşı</p>
     </div>
+
+    <button class="edit-btn" onclick="toggleEdit()">🖊️ Düzəliş Et</button>
   </div>
 
   <!-- Sağ tərəf -->
   <div class="right">
     <div class="section-title-right">Təhsil</div>
     <div class="info">
-      <p><strong>2013–2024:</strong> Seyid Cəfər Pişəvəri adına H.F.G</p>
-      <p><strong>2024:</strong> Azərbaycan Texniki Universitet</p>
-      <p>Fakultə: İnformasiya texnologiyaları və telekommunasiyası</p>
-      <p>İxtisas: Kiber Təhlükəsizlik</p>
+      <p class="editable"><strong>2013–2024:</strong> Seyid Cəfər Pişəvəri adına H.F.G</p>
+      <p class="editable"><strong>2024:</strong> Azərbaycan Texniki Universitet</p>
+      <p class="editable">Fakultə: İnformasiya texnologiyaları və telekommunasiyası</p>
+      <p class="editable">İxtisas: Kiber Təhlükəsizlik</p>
     </div>
 
     <div class="section-title-right">İş Təcrübəsi</div>
     <div class="info">
-      <p><strong>2024–2025:</strong> Dahi Academy kursunda nəzarətçi menecer</p>
+      <p class="editable"><strong>2024–2025:</strong> Dahi Academy kursunda nəzarətçi menecer</p>
       <span class="tag">İdarəçilik</span>
+    </div>
+
+    <div class="section-title-right">Texniki Bacarıqlar</div>
+    <div class="info">
+      <p><span class="tag">Microsoft Word</span> <span class="tag">Excel</span> <span class="tag">Python</span> <span class="tag">HTML/CSS</span> <span class="tag">Linux əsasları</span></p>
+    </div>
+
+    <div class="section-title-right">Məsuliyyətlər</div>
+    <div class="info">
+      <ul>
+        <li class="editable">Kurs iştirakçılarının qeydiyyatını idarə etmək</li>
+        <li class="editable">Gündəlik hesabatların hazırlanması</li>
+        <li class="editable">İT avadanlıqlarının nəzarəti və təhlükəsizliyi</li>
+      </ul>
     </div>
   </div>
 </div>
-
+  
 </body>
 </html>
