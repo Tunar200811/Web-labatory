@@ -1,71 +1,77 @@
-* {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f5f5f5;
-  }
-  .cv-container {
-    display: flex;
-    max-width: 1000px;
-    margin: 40px auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  .left {
-    background: #0077b6;
-    color: white;
-    width: 35%;
-    padding: 30px;
-  }
-  .right {
-    width: 65%;
-    padding: 30px;
-  }
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-  h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  h2 {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: normal;
-  }
-  .section-title {
-    font-weight: bold;
-    font-size: 18px;
-    border-bottom: 2px solid white;
-    margin: 30px 0 10px;
-    padding-bottom: 5px;
-  }
-  .section-title-right {
-    font-weight: bold;
-    font-size: 18px;
-    border-bottom: 2px solid #0077b6;
-    margin: 20px 0 10px;
-    padding-bottom: 5px;
-  }
-  .info p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  .tag {
-    display: inline-block;
-    background: #ef233c;
-    color: white;
-    padding: 3px 8px;
-    font-size: 12px;
-    border-radius: 5px;
-    margin-top: 5px;
-  }
-  
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left, .right {
+  padding: 30px;
+}
+
+.left {
+  width: 35%;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+}
+
+.right {
+  width: 65%;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title, .section-title-right {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0b5ed7;
+}
+
+.info p, .info ul {
+  margin: 6px 0;
+}
+
+.editable:hover {
+  background-color: #eef;
+  cursor: pointer;
+}
+
+.tag {
+  background-color: #ddd;
+  padding: 3px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.edit-btn {
+  margin-top: 20px;
+  background-color: #0b5ed7;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.edit-btn:hover {
+  background-color: #0a53be;
+}
