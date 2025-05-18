@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Tunar Məmmədli - CV</title>
+  <link rel="stylesheet" href="c.css">
+</head>
+<body>
+
+<div class="cv-container">
+
+  <div class="left">
+    <img class="profile-pic" src="https://i.postimg.cc/9f5FWZhB/Whats-App-Image-2025-05-02-at-23-08-50-bcfb5346.jpg" alt="Profil şəkli">
+    <h1 class="editable" id="name-display">Tunar Məmmədli</h1>
+    <h2 class="editable" id="title-display">Kiber Təhlükəsizlik Tələbəsi</h2>
+
+    <div class="section-title">Əlaqə</div>
+    <div class="info">
+      <p class="editable" id="address-display">Bakı şəhəri, Kürdəxanı qəsəbəsi</p>
+      <p class="editable" id="phone-display">055-123-45-67</p>
+      <p class="editable" id="email-display">memmedlit1234@gmail.com</p>
+    </div>
+
+    <div class="section-title">Şəxsi Məlumat</div>
+    <div class="info">
+      <p class="editable" id="fullname-display">Ad Soyad: Tunar Məmmədli</p>
+      <p class="editable" id="birthdate-display">Doğum tarixi: 02.01.2008</p>
+      <p class="editable" id="status-display">Ailə vəziyyəti: Subay</p>
+    </div>
+
+    <div class="section-title">Dil Bilikləri</div>
+    <div class="info">
+      <p class="editable" id="rus-display">Rus dili – Orta</p>
+      <p class="editable" id="eng-display">İngilis dili – Yaxşı</p>
+    </div>
+
+    <button class="edit-btn" onclick="toggleEdit()">🖊️ Düzəliş Et</button>
+  </div>
+
+  <div class="right">
+    <div class="section-title-right">Təhsil</div>
+    <div class="info">
+      <p class="editable" id="edu1-display"><strong>2013–2024:</strong> Seyid Cəfər Pişəvəri adına H.F.G</p>
+      <p class="editable" id="edu2-display"><strong>2024:</strong> Azərbaycan Texniki Universitet</p>
+      <p class="editable" id="faculty-display">Fakultə: İnformasiya texnologiyaları və telekommunasiyası</p>
+      <p class="editable" id="major-display">İxtisas: Kiber Təhlükəsizlik</p>
+    </div>
+
+    <div class="section-title-right">İş Təcrübəsi</div>
+    <div class="info">
+      <p class="editable" id="work-display"><strong>2024–2025:</strong> Dahi Academy kursunda nəzarətçi menecer</p>
+      <span class="tag">İdarəçilik</span>
+    </div>
+
+    <div class="section-title-right">Texniki Bacarıqlar</div>
+    <div class="info">
+      <p><span class="tag">Microsoft Word</span> <span class="tag">Excel</span> <span class="tag">Python</span> <span class="tag">HTML/CSS</span> <span class="tag">Linux əsasları</span></p>
+    </div>
+
+    <div class="section-title-right">Məsuliyyətlər</div>
+    <div class="info">
+      <ul id="responsibilities-list">
+        <li class="editable">Kurs iştirakçılarının qeydiyyatını idarə etmək</li>
+        <li class="editable">Gündəlik hesabatların hazırlanması</li>
+        <li class="editable">İT avadanlıqlarının nəzarəti və təhlükəsizliyi</li>
+      </ul>
+    </div>
+
+    <form id="lab-form">
+      <div class="section-title-right">Yeni Məlumat Əlavə Et</div>
+
+      <input type="text" id="input-name" placeholder="Ad Soyad" required>
+      <input type="email" id="input-email" placeholder="E-poçt" required>
+      <input type="date" id="input-date" placeholder="Tarix" required>
+      <textarea id="input-description" placeholder="Təsvir" required></textarea>
+
+      <button type="submit" class="save-btn">Yadda Saxla</button>
+    </form>
+  </div>
+</div>
+
+<script src="j.js"></script>
+</body>
+</html>

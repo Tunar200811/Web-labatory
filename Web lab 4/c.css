@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .cv-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .left, .right {
+    padding: 30px;
+  }
+  
+  .left {
+    width: 35%;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+  }
+  
+  .right {
+    width: 65%;
+  }
+  
+  .profile-pic {
+    width: 150px; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title, .section-title-right {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0b5ed7;
+  }
+  
+  .info p, .info ul {
+    margin: 6px 0;
+  }
+  
+  .editable:hover {
+    background-color: #eef;
+    cursor: pointer;
+  }
+  
+  .tag {
+    background-color: #ddd;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  
+  .edit-btn, .save-btn {
+    margin-top: 20px;
+    background-color: #0b5ed7;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .edit-btn:hover, .save-btn:hover {
+    background-color: #0a53be;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 6px 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  
